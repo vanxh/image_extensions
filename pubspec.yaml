@@ -1,6 +1,6 @@
 name: image_extensions
-description: A simple command-line application.
-version: 0.0.0
+description: A wrapper library for [image package](https://pub.dev/packages/image) with some extra functions.
+version: 0.1.0
 homepage: https://github.com/vanxh/image_extensions
 repository: https://github.com/vanxh/image_extensions
 

@@ -2,6 +2,8 @@
 
 A wrapper library for [image package](https://pub.dev/packages/image) with some extra functions.
 
+[![pub.dev Version](https://img.shields.io/pub/v/image_extensions.svg)](https://pub.dev/packages/image_extensions/)
+
 ## Installation
 
 Add this to your package's `pubspec.yaml` file:
