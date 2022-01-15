@@ -3,7 +3,8 @@ import "package:http/http.dart";
 import "package:image/image.dart";
 
 /// URL regex
-final RegExp urlRegex = RegExp(r"^https?:\/\/.*(?:png|jpg|jpeg|gif)$");
+final RegExp urlRegex = RegExp(
+    r"^(?:([A-Za-z]+):)?(\/{0,3})([0-9.\-A-Za-z]+)(?::(\d+))?(?:\/([^?#]*))?(?:\?([^#]*))?(?:#(.*))?$");
 
 /// load an image from network.
 /// [url] is the image url.
