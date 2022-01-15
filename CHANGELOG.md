@@ -10,8 +10,6 @@
 -   Added drawLinearGradient method to draw linear gradients.
 -   Added to removeAlphaChannel.
 
-## 0.1.1
+## 0.2.0
 
-# Bug fix
-
--   Url regex fix.
+-   Added fillShape function.
