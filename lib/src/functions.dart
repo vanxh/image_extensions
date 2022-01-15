@@ -29,11 +29,28 @@ Future<Image?> loadImage(String path) async {
 /// draw canvas
 Image drawCanvas(int x, int y) => Image(x, y);
 
-/// Converts an image canvas to a byte array
-List<int> toPNG(Image canvas) {
-  for (int i = 0; i < canvas.data.length; i++) {
-    canvas.data[i] = canvas.data[i] | 0xff000000;
+/// Removes the alpha channel on [dst].
+///
+/// Equivalent to
+/// ```dart
+/// Image.fromBytes(
+///   canvas.width,
+///   canvas.height,
+///   canvas.getBytes(format: Format.rgb),
+///   format: Format.rgb,
+/// );
+/// ```
+Image removeAlphaChannel(Image dst) {
+  for (int i = 0; i < dst.data.length; i++) {
+    dst.data[i] = dst.data[i] | 0xff000000;
   }
 
-  return encodePng(canvas);
+  Image.fromBytes(
+    dst.width,
+    dst.height,
+    dst.getBytes(format: Format.rgb),
+    format: Format.rgb,
+  );
+
+  return dst;
 }
