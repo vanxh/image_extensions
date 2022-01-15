@@ -4,7 +4,7 @@ import "package:image/image.dart";
 
 /// URL regex
 final RegExp urlRegex = RegExp(
-    r"^(?:([A-Za-z]+):)?(\/{0,3})([0-9.\-A-Za-z]+)(?::(\d+))?(?:\/([^?#]*))?(?:\?([^#]*))?(?:#(.*))?$");
+    r"[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)");
 
 /// load an image from network.
 /// [url] is the image url.

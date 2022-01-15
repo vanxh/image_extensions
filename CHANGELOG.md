@@ -9,3 +9,9 @@
 -   Added drawRadialGradient method to draw radial gradients.
 -   Added drawLinearGradient method to draw linear gradients.
 -   Added to removeAlphaChannel.
+
+## 0.1.1
+
+# Bug fix
+
+-   Url regex fix.
